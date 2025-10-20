@@ -1,0 +1,169 @@
+comandos do linux:
+ls: listagem de pastas e seu conteudo
+ex: ls
+
+lscpu: mostra informaçoes de nosso processador
+ex: lscpu
+
+lsusb: mostra as entradas usb
+ex: lsusb
+
+lspci: mostra o que esta se conectando com as linha pci do seu computador
+ex: lspci
+
+lsblk: mostra informações do seu disco rigido
+ex: lsblk
+
+uma ideia e usar o grep com o ls
+ex: lspci | grep USB
+
+
+man nome_do_comando: manual mostra a função do comando
+ex: man
+obs: para sair do manual so basta aperta a letra Q
+
+nome_do_comando --help: mostra a sintaxe do comando e explicação de como usa-lo
+ex: ls --help
+
+clear: usa para limpar a tela do terminal
+ex: clear
+obs: o ctrl + L e um atalho para limpar a tela
+
+mkdir nome_da_pasta: cria diretorios ou pastas
+ex: mkdir imagem
+para criar multiplas só precisa separa as pasta por espaços
+ex: mkdir pasta1 pasta2
+caso queira usar um nome composta só escrever entre "" ou ''
+ex: mkdir "samuel felipe"
+
+
+cd: navega dentro das pastas
+ex: ~/imagens/
+para procurar diretorios com nomes compostos só escrever entre "" ou ''
+ex: cd ~/'samuel felipe'/
+
+ 
+
+obs: o tab completa as informações
+
+pwd: este comando imprimi o diretorio de trabalho
+ex: /home/user/Imagens
+
+whoami: retorna o nome de usuario
+ex: samuel
+redicionadores: manda uma informação para algum lugar
+ex: whoami >> usuario.txt
+
+touch: usado para criar arquivos
+ex: touch nome.txt
+
+nano: um editor de texto
+ex: nano nome.txt
+^ = crtl
+
+cat: serve para concatenar arquivos, mas e usado para ler documentos pequenos
+ex: cat nome.txt
+
+mv: serve para modificar o nome do arquivo
+ex: mv nome_do_arquivo_que_deseja_mudar_o_nome nome_novo_do_arquivo
+ex2:mv nome.txt novo_nome.txt
+
+cp: serve para copiar arquivo para outra pasta
+ex: cp arquivo ~/pasta_que_deseja_copiar_o_arquivo/
+
+ex2: cp novo_nome.txt ~/Documentos/
+
+find: procurar arquivos dentro de diretorios
+ex: find . -name nome_do_arquivo
+. = dentro do diretorio
+ex2: find . -name novo_nome.txt
+Variaçoes 
+caso queira encontrar so extensoes ou nomes especificos
+* = tudo
+ex find . *txt*
+
+head & tail: serve para ler trechos dos arquivos de textos
+head = mostra as primeiras linhas do arquivo
+ex: head novo_nome.txt 
+tail = mostra as partes finais do arquivo
+ex: tail novo_nome.txt
+
+less: mostra a parte inicial do arquivo e voce pode ir descendo
+ex:less novo_nome.txt 
+para sair e so digita q
+
+rm: serve para remover um arquivo pelo terminal
+ex: rm novo_nome.txt
+
+rmdir: serve para remover diretorios
+ex: rmdir pasta1
+
+rm -rf: serve para remover tudo desde diretorio ate arquivos
+ex: rm -rf pasta2
+não faça isso 
+ex: rm -rf /
+pois voce vai apagar todo seu disco rigido
+
+hostname: retorna o nome da sua maquina
+ex: hostname
+
+hostname -I: retorna o ip da sua maquina
+ex: hostname -I
+
+ip a: para mostrar todas as informações
+ex: ip a
+
+grep: filtra as informaçoes
+ex2: ip a | grep inet
+ele so ir retorna informações que tenha o inet
+
+ping: manda um ping para um site e mede o tempo de retorno
+ex: ping site_legal
+ex2: ping google.com
+obs: caso queira para e so usar o ctrl + c
+
+free : serve para ver como esta indo o seu computador como memoria ram e etc
+variaçoes:
+free -h: mostra com valores mais humanos, ja convertidos
+free -m: mostra so valores sem conversao
+
+top: um monitor de sistema so que mais simplificado
+ex: top
+
+htop: mais completo mais precisa instalar
+para isso so usar o comando 
+sudo apt install htop
+ex: htop
+
+ps: mostra os processos rodando neste momento no terminal
+ex: ps
+
+ps aux: da um print de todos os processos que estao rodando
+ex: ps aux
+uma boa ideia e usar o ps aux com o grep
+ex: ps aux | grep 'editor de texto'
+
+pgrep: a união dos comandos ps aux com o grep
+ex: pgrep Geany
+ele vai retorna um id
+ex:19233
+
+kill: caso queira fechar alguma coisa
+o kill vai precisar do id que o pgrep ou o ps aux retorna
+ex: kill id_do_processo
+ex2: kill 19233
+
+df -h: mostra como estao as coisa no seu computador ex: espaço livre
+ex: df -h
+
+ncdu: faz a mesma coisa que o df -h,mais de maneira mais completa podendo gerenciar os arquivos
+tem que baixar o comando e: sudo apt install ncdu
+ex: ncdu
+
+uname: para ver alguma informaçoes do sistema qual a versao dele e entre outros
+ex: uname
+uname -r: mostra a versao especifica do sistema operacional
+
+history: serve para ver todos os comando que foram feitos no terminal
+ex: history
+
