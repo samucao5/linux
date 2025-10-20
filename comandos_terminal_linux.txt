@@ -19,7 +19,7 @@ ex: lspci | grep USB
 
 
 man nome_do_comando: manual mostra a função do comando
-ex: man
+ex: man ls
 obs: para sair do manual so basta aperta a letra Q
 
 nome_do_comando --help: mostra a sintaxe do comando e explicação de como usa-lo
@@ -166,4 +166,5 @@ uname -r: mostra a versao especifica do sistema operacional
 
 history: serve para ver todos os comando que foram feitos no terminal
 ex: history
+
 
