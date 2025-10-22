@@ -167,4 +167,9 @@ uname -r: mostra a versao especifica do sistema operacional
 history: serve para ver todos os comando que foram feitos no terminal
 ex: history
 
+open: consegue abrir pastas,PDF, audios entre outros
+ex: open o_que_voce_deseja_abrir
+ex2: open imagem.png
+
+
 
