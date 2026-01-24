@@ -45,6 +45,12 @@ cd: navega dentro das pastas
 ex: ~/imagens/
 para procurar diretorios com nomes compostos só escrever entre "" ou ''
 ex: cd ~/'samuel felipe'/
+Voltar uma pasta: 
+cd ..
+Voltar duas pastas:
+cd ..\..
+Ir para a raiz: 
+cd \
 
  
 
@@ -177,6 +183,7 @@ ex2: open imagem.png
 
 abir aplicativos e so digitar o nome no terminal
 ex: geany
+
 
 
 
