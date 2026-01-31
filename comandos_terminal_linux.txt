@@ -184,6 +184,8 @@ ex2: open imagem.png
 abir aplicativos e so digitar o nome no terminal
 ex: geany
 
+Mostrar o diretório atual:
+pwd
 
 
 
