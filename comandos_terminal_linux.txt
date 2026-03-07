@@ -1,7 +1,7 @@
 comandos do linux:
 
 para abrir o terminal e so usar este comando
-ctrl + alt + t 
+Ctrl + alt + t 
 
 ls: listagem de pastas e seu conteudo
 ex: ls
@@ -186,6 +186,7 @@ ex: geany
 
 Mostrar o diretório atual:
 pwd
+
 
 
 
